@@ -1,9 +1,9 @@
 # stack-using-array
 #include<stdio.h>
-int stack[100],x,i,n,top;
+int stack[100],x,i,n,top=-1;
 void push()
 {
-    if(top>=n-1)
+    if(top==99)
     {
         printf("stack over flow occur");
     }
@@ -17,7 +17,7 @@ void push()
 }
 void pop()
 {
-    if(top<=-1)
+    if(top==-1)
     {
         printf("stack under flow occur\n");
     }
